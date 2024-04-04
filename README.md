@@ -67,7 +67,7 @@
   <img src="https://github.com/gnaak/billybully/blob/main/%5BBE%5DDocs/img/BillyBully_Infra.PNG">
 </div>
 
-<table align=center>
+<table>
     <thead>
         <tr>
             <th>category</th>
