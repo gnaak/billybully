@@ -1,7 +1,7 @@
 <div align=center>
   <img
     align=center
-    src="https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A401/-/raw/backend/%5BBE%5DDocs/img/%EB%B9%8C%EB%A6%AC%EB%B6%88%EB%A6%AC_%EB%A1%9C%EA%B3%A0.png?ref_type=heads"
+    src="https://github.com/gnaak/billybully/-/raw/backend/%5BBE%5DDocs/img/%EB%B9%8C%EB%A6%AC%EB%B6%88%EB%A6%AC_%EB%A1%9C%EA%B3%A0.png?ref_type=heads"
     width="500">
 </div>
 
