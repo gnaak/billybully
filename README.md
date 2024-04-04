@@ -64,7 +64,7 @@
 ## 기술 스택
 
 <div align=center>
-  <img src="https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A401/-/raw/backend/%5BBE%5DDocs/img/BillyBully_Infra.PNG?ref_type=heads">
+  <img src="https://github.com/gnaak/billybully/blob/main/%5BBE%5DDocs/img/BillyBully_Infra.PNG">
 </div>
 
 <table align=center>
