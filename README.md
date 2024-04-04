@@ -141,7 +141,7 @@ Spring 버전 / [Spring 버전 선택이유](/[BE]Docs/SpringBoot.md)
 인프라 일지 / [Infra 일지](https://sulky-cemetery-fa5.notion.site/88dc1cbfc29a4c6ea7f42f3be1f795db)
 
 ### ERD
-![ERD](https://lab.ssafy.com/s10-fintech-finance-sub2/S10P22A401/-/raw/backend/%5BA401%5D%20%EC%82%B0%EC%B6%9C%EB%AC%BC/%5BA401%5D%20ERD.png?ref_type=heads)  
+![ERD](https://github.com/gnaak/billybully/blob/main/%5BA401%5D%EC%82%B0%EC%B6%9C%EB%AC%BC/%5BA401%5D%20ERD.png)  
 SQL dump / [SQL Dump File](/[A401]산출물/BillyBully_SQL)
 
 ### 라이선스
