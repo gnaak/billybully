@@ -1,0 +1,170 @@
+--
+-- INSERT INTO `situation` (`name`, `story`) VALUES
+--                                               ('9.11 테러', '2001년 9월 11일, 테러 공격으로 미국의 뉴욕과 워싱턴 D.C.가 공격당하며, 세계 경제에 큰 충격을 주었습니다.'),
+--                                               ('COVID 19', '코로나 19 팬데믹으로 세계적으로 건강 위기를 초래하며 경제에도 심각한 영향을 미쳤습니다.'),
+--                                               ('오일 쇼크', '중동에서 원유 생산 제한과 원유 가격 상승으로 경제와 에너지 의존성 위기가 부각됐습니다.'),
+--                                               ('세계 전쟁', '대규모 국제전쟁이 발발하여, 전세계를 휩쓸며 엄청난 재정 손실 및 인명 손실을 끼쳤습니다.'),
+--                                               ('대공황', '월스트리트 대폭락으로 시작되어 미국을 기준으로 세계적으로 경제 침체가 발생하고, 실업률 증가하고 빈곤 확산, 물가 하락에 영향을 미쳤습니다.'),
+--                                               ('한강의 기적', '대한민국이 수출 중심 경제 모델과 기술 혁신을 기반으로 빠르게 성장하여 세계에 인상적인 성과를 이루었습니다.'),
+--                                               ('뉴딜정책', '루즈벨트 대통령의 뉴딜정책은 대공황 시기에 경제 회복을 위해 공공 프로젝트와 사회복지 프로그램을 실시하는데 성공하여 미국경제를 활성화 시켰습니다.'),
+--                                               ('마셜플랜', '제 2차 세계대전 이후 미국이 유럽 국가들의 경제 회복을 지원하기 위해 마셜 플랜을 시행하였습니다.'),
+--                                               ('아베노믹스', '일본의 총리 아베 신조가 디플레이션과 경제 불확실성에 대항하기 위해 정책을 시행하였습니다. 통화 완화, 재정 정책, 구조개혁을 포함해 경제 회복과 더불어 인플레이션을 목표로 하였습니다.'),
+--                                               ('3저 호황', '저달러·저유가·저금리를 동시에 경험하며, 대한민국의 경제 안정과 최대 호황에 기여하였습니다.');
+--
+--
+--
+-- INSERT INTO `fintech` (`id`, `type`, `name`, `buy_price`, `sell_price`, `income`) VALUES
+--                                                                                       (1, 'INVESTMENT', '순양 물산 (건설 회사)', 400000000, 400000000, 50000000),
+--                                                                                       (2, 'INVESTMENT', 'GX 칼텍스 (석유 회사)', 500000000, 500000000, 70000000),
+--                                                                                       (3, 'INVESTMENT', 'JVP (엔터테인먼트)', 400000000, 400000000, 50000000),
+--                                                                                       (4, 'INVESTMENT', '엔씨하드 (IT 회사)', 400000000, 400000000, 60000000),
+--                                                                                       (5, 'INVESTMENT', '로테 백화점 (패션)', 500000000, 500000000, 60000000),
+--                                                                                       (6, 'INVESTMENT', 'YB (엔터테인먼트)', 400000000, 400000000, 50000000),
+--                                                                                       (7, 'INVESTMENT', '도스 (IT 회사)', 300000000, 300000000, 40000000),
+--                                                                                       (8, 'INVESTMENT', '삼숭 전자 (반도체 회사)', 400000000, 400000000, 50000000),
+--                                                                                       (9, 'INVESTMENT', '쿠쿠 전자 (제조 회사)', 500000000, 500000000, 60000000),
+--                                                                                       (10, 'INVESTMENT', '두리 투어 (관광 회사)', 200000000, 200000000, 30000000),
+--                                                                                       (11, 'INVESTMENT', '젤트리온 (제약 회사)', 200000000, 200000000, 30000000),
+--                                                                                       (12, 'INVESTMENT', '한쿡 전력 공사 (전기 회사)', 400000000, 400000000, 50000000),
+--                                                                                       (13, 'INVESTMENT', '편대 자동차 (자동차 회사)', 500000000, 500000000, 60000000),
+--                                                                                       (14, 'FOUNDATION', '이춘식 참치', 300000000, 200000000, 40000000),
+--                                                                                       (15, 'FOUNDATION', '바비큐 치킨', 80000000, 50000000, 10000000),
+--                                                                                       (16, 'FOUNDATION', '스포해니 헬스클럽', 250000000, 150000000, 30000000),
+--                                                                                       (17, 'FOUNDATION', '해묵 장어전문점', 300000000, 200000000, 40000000),
+--                                                                                       (18, 'FOUNDATION', '정담 어학원', 200000000, 140000000, 25000000),
+--                                                                                       (19, 'FOUNDATION', '3BOB PC방', 180000000, 100000000, 20000000),
+--                                                                                       (20, 'FOUNDATION', '오륜진사갈비', 220000000, 150000000, 30000000),
+--                                                                                       (21, 'FOUNDATION', '올리브융 화장품', 150000000, 100000000, 18000000),
+--                                                                                       (22, 'FOUNDATION', '아이작 토스트', 100000000, 50000000, 13000000),
+--                                                                                       (23, 'FOUNDATION', '도미도 피자', 150000000, 100000000, 20000000),
+--                                                                                       (24, 'FOUNDATION', '홈마이너스 슈퍼마켓', 150000000, 100000000, 18000000),
+--                                                                                       (25, 'REAL_ESTATE', '에스원 오피스텔', 180000000, 180000000, 10000000),
+--                                                                                       (26, 'REAL_ESTATE', '판쿄 대지', 160000000, 160000000, 9000000),
+--                                                                                       (27, 'REAL_ESTATE', '부르지오 오피스텔', 160000000, 160000000, 9000000),
+--                                                                                       (28, 'REAL_ESTATE', '주원 대지', 190000000, 190000000, 7000000),
+--                                                                                       (29, 'REAL_ESTATE', '해피 빌라', 84000000, 84000000, 3500000),
+--                                                                                       (30, 'REAL_ESTATE', '중흥 K클래스 아파트', 161000000, 161000000, 12000000),
+--                                                                                       (31, 'REAL_ESTATE', '더 라이브 프리미엄 오피스텔', 130000000, 130000000, 7000000),
+--                                                                                       (32, 'REAL_ESTATE', '배켠마을 빌라', 96000000, 96000000, 4500000),
+--                                                                                       (33, 'REAL_ESTATE', '소장동 대지', 50000000, 50000000, 2500000),
+--                                                                                       (34, 'REAL_ESTATE', '더 샾 오르고 오피스텔', 160000000, 160000000, 9000000),
+--                                                                                       (35, 'REAL_ESTATE', '로테캐슬 아파트', 252000000, 252000000, 17000000);
+--
+--
+-- INSERT INTO `issue` (`id`, `name`, `description`, `balance`) VALUES
+--                                                            (1, '전세사기', '전세사기를 당했습니다. 전세금 2억을 지불하세요.', -200000000),
+--                                                            (2, '명품백 구입', '연인에게 명품백을 사줬습니다. 명품백 구매비용 2억을 지불하세요.', -50000000),
+--                                                            (3, '자동차 구입', '충동적으로 BNW를 구입했습니다. 자동차 구매비용 5천만원을 지불하세요.', -50000000),
+--                                                            (4, '수술비', '병원에서 전신성형수술을 받았습니다. 수술비 1천만원을 지불하세요.', -10000000),
+--                                                            (5, '결혼', '연인과 결혼했습니다. 결혼비용 7천만원을 지불하세요.', -70000000),
+--                                                            (6, '로또 당첨', '로또 2등에 당첨되었습니다. 당첨금 5천만원을 수령하세요.', 50000000),
+--                                                            (7, '실업', '직장에서 해고통지를 받았습니다. 실업급여 1천만원을 수령하세요.', 10000000),
+--                                                            (8, '적금만기', '적금이 만기되었습니다. 적금 5천만원을 수령하세요.', 50000000),
+--                                                            (9, '부동산 가압류', '소유 부동산이 가압류 되었습니다. 은행에게 5천만원을 지불하세요.', -50000000),
+--                                                            (10, '창업 지원금', '정부로부터 창업지원금을 받았습니다. 창업지원금 8천만원을 수령하세요.', 80000000),
+--                                                            (11, '자녀 유학', '자녀를 미국으로 유학보냈습니다. 유학비용 1억원을 지불하세요.', -100000000),
+--                                                            (12, '전액 장학금', '4년 장학금을 받았습니다. 전액 장학금 4천만원을 수령하세요.', 40000000);
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('1', '1', '1', '-10');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('2', '1', '9', '-8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('3', '1', '5', '-11');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('4', '1', '4', '-12');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('5', '1', '7', '-12');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('6', '1', '3', '-7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('7', '1', '6', '-7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('8', '1', '10', '-7');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('9', '2', '3', '-8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('10', '2', '6', '-5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('11', '2', '10', '-12');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('12', '2', '9', '-9');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('13', '3', '3', '-5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('14', '3', '6', '-8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('15', '3', '10', '-9');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('16', '4', '8', '-4');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('17', '4', '12', '-11');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('18', '5', '2', '-9');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('19', '5', '8', '-8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('20', '5', '12', '-6');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('21', '5', '1', '-8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('22', '5', '25', '-5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('23', '5', '26', '-7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('24', '5', '27', '-8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('25', '5', '28', '-4');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('26', '5', '29', '-7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('27', '5', '30', '-8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('28', '5', '31', '-10');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('29', '5', '32', '-12');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('30', '5', '33', '-5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('31', '5', '34', '-5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('32', '5', '35', '-5');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('33', '6', '8', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('34', '6', '25', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('35', '6', '26', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('36', '6', '27', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('37', '6', '28', '1');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('38', '6', '29', '2');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('39', '6', '30', '3');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('40', '6', '31', '4');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('41', '6', '32', '5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('42', '6', '33', '6');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('43', '6', '34', '7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('44', '6', '35', '8');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('45', '7', '1', '6');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('46', '7', '9', '7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('47', '7', '5', '3');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('48', '7', '4', '3');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('49', '7', '7', '4');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('50', '7', '3', '5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('51', '7', '6', '6');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('52', '7', '10', '11');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('53', '7', '2', '7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('54', '7', '11', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('55', '7', '8', '9');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('56', '7', '12', '10');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('57', '8', '2', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('58', '8', '1', '7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('59', '8', '12', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('60', '8', '13', '6');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('61', '9', '11', '10');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('62', '9', '4', '11');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('63', '9', '7', '6');
+--
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('64', '10', '1', '6');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('65', '10', '5', '5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('66', '10', '3', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('67', '10', '10', '4');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('68', '10', '6', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('69', '10', '25', '7');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('70', '10', '26', '6');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('71', '10', '27', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('72', '10', '28', '5');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('73', '10', '29', '8');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('74', '10', '30', '9');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('75', '10', '31', '10');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('76', '10', '32', '6');
+-- INSERT INTO `billybully`.`situation_effect` (`id`, `situation_id`, `fintech_id`, `percentage`) VALUES ('77', '10', '33', '5');
+--
+--
+-- INSERT INTO `billybully`.`member` (`created_at`, `id`, `modified_at`, `name`) VALUES ('2024-03-27 17:14:31.578408', '1', '2024-03-27 17:14:31.578408', 'user1');
+-- INSERT INTO `billybully`.`member` (`created_at`, `id`, `modified_at`, `name`) VALUES ('2024-03-27 17:14:31.578408', '2', '2024-03-27 17:14:31.578408', 'user2');
+-- INSERT INTO `billybully`.`member` (`created_at`, `id`, `modified_at`, `name`) VALUES ('2024-03-27 17:14:31.578408', '3', '2024-03-27 17:14:31.578408', 'user3');
+--
+-- INSERT INTO `billybully`.`room` (`game_started`,`participants`, `master_id`, `name`) VALUES ( false,'3', '1', 'room1');
+--
+-- INSERT INTO `billybully`.`player` (`cash`, `loan`, `position`, `id`, `member_id`, `room_id`) VALUES ('500000000', '0', '1', '1','1','1');
+-- INSERT INTO `billybully`.`player` (`cash`, `loan`, `position`, `id`, `member_id`, `room_id`) VALUES ('500000000', '0', '1', '2','2','1');
+-- INSERT INTO `billybully`.`player` (`cash`, `loan`, `position`, `id`, `member_id`, `room_id`) VALUES ('500000000', '0', '1', '3','3','1');
+--
+-- INSERT INTO `billybully`.`fintech_possession` (`fintech_id`, `id`, `player_id`, `type`) VALUES ('1', '1', '1', 'INVESTMENT');
+-- INSERT INTO `billybully`.`fintech_possession` (`fintech_id`, `id`, `player_id`, `type`) VALUES ('2', '2', '1', 'INVESTMENT');
+-- INSERT INTO `billybully`.`fintech_possession` (`fintech_id`, `id`, `player_id`, `type`) VALUES ('3', '3', '2', 'INVESTMENT');
+-- INSERT INTO `billybully`.`fintech_possession` (`fintech_id`, `id`, `player_id`, `type`) VALUES ('18', '4', '3', 'FOUNDATION');
+-- INSERT INTO `billybully`.`fintech_possession` (`fintech_id`, `id`, `player_id`, `type`) VALUES ('32', '5', '3', 'REAL_ESTATE');

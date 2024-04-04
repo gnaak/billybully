@@ -1,0 +1,15 @@
+${AnsiColor.YELLOW} /$$$$$$$  /$$ /$$ /$$           /$$$$$$$            /$$ /$$
+${AnsiColor.YELLOW} | $$__  $$|__/| $$| $$          | $$__  $$          | $$| $$
+${AnsiColor.YELLOW} | $$  \ $$ /$$| $$| $$ /$$   /$$| $$  \ $$ /$$   /$$| $$| $$ /$$   /$$
+${AnsiColor.YELLOW} | $$$$$$$ | $$| $$| $$| $$  | $$| $$$$$$$ | $$  | $$| $$| $$| $$  | $$
+${AnsiColor.YELLOW} | $$__  $$| $$| $$| $$| $$  | $$| $$__  $$| $$  | $$| $$| $$| $$  | $$
+${AnsiColor.YELLOW} | $$  \ $$| $$| $$| $$| $$  | $$| $$  \ $$| $$  | $$| $$| $$| $$  | $$
+${AnsiColor.YELLOW} | $$$$$$$/| $$| $$| $$|  $$$$$$$| $$$$$$$/|  $$$$$$/| $$| $$|  $$$$$$$
+${AnsiColor.YELLOW} |_______/ |__/|__/|__/ \____  $$|_______/  \______/ |__/|__/ \____  $$
+${AnsiColor.YELLOW}                        /$$  | $$                             /$$  | $$
+${AnsiColor.YELLOW}                       |  $$$$$$/                            |  $$$$$$/
+${AnsiColor.YELLOW}                        \______/                              \______/
+
+
+${application.title} ${application.version}
+Powered by Spring Boot ${spring-boot.version}
